@@ -10,12 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Garbage">
         <activity
-            android:name=".GarbageActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="sensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
