@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#767272"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"/>
+
+
+
+    <!--FrameLayout blocks an area on the screen to display a single item. I have used it to display
+    the two separate fragments. But with navGraph I don't use this code anymore-->
+
+    <!--
+    <FrameLayout
+        android:id="@+id/container_ui"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <FrameLayout
+        android:id="@+id/container_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#6e4d50"
+        android:textSize="@dimen/list_text_size"
+        android:layout_weight="1"
+        />
+        -->
+
+</LinearLayout>

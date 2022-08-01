@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Garbage V9</string>
+    <string name="added">"The item was added to the database"</string>
+    <string name="empty_toast">"Please type something in the what and where fields"</string>
+    <string name="back">"Go back"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
