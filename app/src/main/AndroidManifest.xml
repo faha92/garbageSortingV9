@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Garbage">
         <activity
-            android:name=".MainActivity"
+            android:name=".GarbageActivity"
             android:exported="true"
             android:screenOrientation="sensor">
             <intent-filter>

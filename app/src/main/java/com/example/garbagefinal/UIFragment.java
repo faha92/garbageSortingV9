@@ -29,13 +29,14 @@ public class UIFragment extends Fragment {
     private final static String ImageIntent= "android.media.action.IMAGE_CAPTURE";
     private final static int IMAGE_REQUEST= 2;
     private static final String TAG = "UIFragment";
-
+    private TextView alert;
     private TextView itemWhat;
     private TextView itemWhere;
     private Button itemListButton;
     private Button addItemButton;
     private Button whereButton;
     private Button takePictureButton;
+    private Button reset;
     private ImageView image;
     private Bitmap imageBitmap;
 
@@ -51,6 +52,7 @@ public class UIFragment extends Fragment {
         final View v= inflater.inflate(R.layout.fragment_ui, container, false);
 
         //text fields and buttons
+        alert = v.findViewById(R.id.alert);
         itemWhat = v.findViewById(R.id.what_text);
         itemWhere = v.findViewById(R.id.where_text);
         whereButton = v.findViewById(R.id.search_button);
@@ -58,6 +60,7 @@ public class UIFragment extends Fragment {
         addItemButton = v.findViewById(R.id.add_button);
         image= v.findViewById(R.id.photo_view);
         takePictureButton= v.findViewById(R.id.take_photo_button);
+        reset = v.findViewById(R.id.reset);
 
 
         // Shared data
@@ -74,9 +77,17 @@ public class UIFragment extends Fragment {
             public void onClick(View view) {
                 String input = "";
                 input = itemWhat.getText().toString();
-                itemWhat.setText(input + " should be placed in: " + garbageDB.getWhere(input));
+                itemWhere.setText(input + " should be placed in: " + garbageDB.getWhere(input));
             }
         });
+
+       reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                itemWhat.setText("");
+                itemWhere.setText("");
+            }});
 
         addItemButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +95,7 @@ public class UIFragment extends Fragment {
                 if ((itemWhat.getText().length() > 0) && (itemWhere.getText().length() > 0)) {
                     Item newItem= new Item(
                             itemWhat.getText().toString(), itemWhere.getText().toString());
+                    alert.setText(itemWhat.getText().toString()+" was successfully added to "+itemWhere.getText().toString());
                     if (imageBitmap != null)  {
                         Log.d(TAG, "onClick: image is not null processing");
                         newItem.setPict(Item.scaleAndConvert(imageBitmap));

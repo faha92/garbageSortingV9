@@ -8,6 +8,21 @@
     android:padding="5dp">
 
         <TextView
+            android:id="@+id/alert"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="-4dp"
+            android:layout_marginLeft="90dp"
+            android:textStyle="italic"
+            android:layout_weight="2.9"
+            android:text="Please insert new item:"
+
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/textView"
             android:layout_width="65dp"
             android:layout_height="wrap_content"
@@ -63,6 +78,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/take_photo_button" />
 
+
+
         <Button
             android:id="@+id/search_button"
             android:layout_width="wrap_content"
@@ -72,7 +89,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="157dp"
             android:background="#39f208"
-            android:text="Where"
+            android:text="Search"
             android:textSize="@dimen/Button_text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -101,9 +118,9 @@
             android:layout_gravity="center"
             android:layout_marginStart="126dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="126dp"
+            android:layout_marginEnd="121dp"
             android:background="#39f208"
-            android:text="List of items"
+            android:text="List items"
             android:textSize="@dimen/text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -118,10 +135,26 @@
             android:layout_marginStart="138dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="138dp"
-            android:text="Take Picture"
+            android:text="Take Photo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/itemList_button" />
+
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="157dp"
+            android:background="#39f208"
+            android:text="Reset"
+            android:textSize="@dimen/Button_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/take_photo_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

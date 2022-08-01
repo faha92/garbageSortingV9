@@ -7,11 +7,16 @@
         <entry key="../garbageSortingV9/app/src/main/res/drawable/ic_camera_background.xml" value="0.161" />
         <entry key="../garbageSortingV9/app/src/main/res/drawable/ic_camera_foreground.xml" value="0.1" />
         <entry key="../garbageSortingV9/app/src/main/res/drawable/ic_launcher_background.xml" value="0.161" />
+        <entry key="../garbageSortingV9/app/src/main/res/drawable/ic_list_background.xml" value="0.125" />
+        <entry key="../garbageSortingV9/app/src/main/res/drawable/ic_settings_background.xml" value="0.125" />
         <entry key="../garbageSortingV9/app/src/main/res/drawable/ic_trash_background.xml" value="0.161" />
+        <entry key="../garbageSortingV9/app/src/main/res/drawable/ic_trash_foreground.xml" value="0.125" />
         <entry key="../garbageSortingV9/app/src/main/res/layout-land/activity_main.xml" value="0.1283068783068783" />
+        <entry key="../garbageSortingV9/app/src/main/res/layout-land/fragment_ui.xml" value="0.11507936507936507" />
         <entry key="../garbageSortingV9/app/src/main/res/layout/activity_main.xml" value="0.1515625" />
         <entry key="../garbageSortingV9/app/src/main/res/layout/fragment_list.xml" value="0.1" />
         <entry key="../garbageSortingV9/app/src/main/res/layout/fragment_ui.xml" value="0.1515625" />
+        <entry key="../garbageSortingV9/app/src/main/res/layout/fragment_ui2.xml" value="0.13489583333333333" />
         <entry key="../garbageSortingV9/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/Users/tonem/Desktop/FinalProject1/FinalProject/app/src/main/res/layout-land/activity_main.xml" value="0.11155202821869488" />
         <entry key="..\:/Users/tonem/Desktop/FinalProject1/FinalProject/app/src/main/res/layout-land/fragment_ui.xml" value="0.4" />
